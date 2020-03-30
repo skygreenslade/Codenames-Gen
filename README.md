@@ -8,8 +8,9 @@
 
 ## Usage:
 
-- videocall includes a view of the game board
-- two people (as codemasters) run the generator to get a card. if codemasters are not local to eachother, send the other one a picture or something.
+- Start a videocall including a view of the game board
+- Two people (as codemasters) run the generator to get a card. if codemasters are not local to eachother, send the other one a picture or something.
+- ~~destroy your opponents~~ Have fun!
 
 ## Executables:
 
