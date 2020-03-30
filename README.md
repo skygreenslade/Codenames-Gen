@@ -10,10 +10,11 @@
 
 - Start a videocall including a view of the game board
 - Two people (as codemasters) run the generator to get a card. if codemasters are not local to eachother, send the other one a picture or something.
-- ~~destroy your opponents~~ Have fun!
+- ~~Destroy your opponents~~ Have fun!
 
 ## Executables:
-
-- Linux: Release 1.1
-- Mac OS: tested on High Sierra 10.13.6 Release 1.1
+| OS | File | Version | Notes |
+| ------ | ------ | ------ | ------ |
+| Linux | RandomCodeCard | 1.1 | Tested on Debian 9 |
+| Mac OS | CodenamesCardGenerator_Mac.app | 1.1 | Tested on High Sierra 10.13.6|
 
