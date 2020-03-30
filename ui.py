@@ -24,100 +24,100 @@ def drawGrid():
 
     ########################  ONE  #########################
 
-    btn00 = tk.Button(window, width=3, height=2, bg=grid[0][0])
-    btn00.grid(column=1, row=1)
+    lbl00 = tk.Label(window, width=10, height=4, bg=grid[0][0])
+    lbl00.grid( pady=2, padx=2, column=1, row=1)
 
-    btn01 = tk.Button(window, width=3, height=2, bg=grid[0][1])
-    btn01.grid(column=1, row=2)
+    lbl01 = tk.Label(window, width=10, height=4, bg=grid[0][1])
+    lbl01.grid( pady=2, padx=2, column=1, row=2)
 
-    btn02 = tk.Button(window, width=3, height=2, bg=grid[0][2])
-    btn02.grid(column=1, row=3)
+    lbl02 = tk.Label(window, width=10, height=4, bg=grid[0][2])
+    lbl02.grid( pady=2, padx=2, column=1, row=3)
 
-    btn03 = tk.Button(window, width=3, height=2, bg=grid[0][3])
-    btn03.grid(column=1, row=4)
+    lbl03 = tk.Label(window, width=10, height=4, bg=grid[0][3])
+    lbl03.grid( pady=2, padx=2, column=1, row=4)
 
-    btn04 = tk.Button(window, width=3, height=2, bg=grid[0][4])
-    btn04.grid(column=1, row=5)
+    lbl04 = tk.Label(window, width=10, height=4, bg=grid[0][4])
+    lbl04.grid( pady=2, padx=2, column=1, row=5)
 
     ########################  TWO  #########################
 
 
-    btn10 = tk.Button(window, width=3, height=2, bg=grid[1][0])
-    btn10.grid(column=2, row=1)
+    lbl10 = tk.Label(window, width=10, height=4, bg=grid[1][0])
+    lbl10.grid( pady=2, padx=2, column=2, row=1)
 
-    btn11 = tk.Button(window, width=3, height=2, bg=grid[1][1])
-    btn11.grid(column=2, row=2)
+    lbl11 = tk.Label(window, width=10, height=4, bg=grid[1][1])
+    lbl11.grid( pady=2, padx=2, column=2, row=2)
 
-    btn12 = tk.Button(window, width=3, height=2, bg=grid[1][2])
-    btn12.grid(column=2, row=3)
+    lbl12 = tk.Label(window, width=10, height=4, bg=grid[1][2])
+    lbl12.grid( pady=2, padx=2, column=2, row=3)
 
-    btn13 = tk.Button(window, width=3, height=2, bg=grid[1][3])
-    btn13.grid(column=2, row=4)
+    lbl13 = tk.Label(window, width=10, height=4, bg=grid[1][3])
+    lbl13.grid( pady=2, padx=2, column=2, row=4)
 
-    btn14 = tk.Button(window, width=3, height=2, bg=grid[1][4])
-    btn14.grid(column=2, row=5)
+    lbl14 = tk.Label(window, width=10, height=4, bg=grid[1][4])
+    lbl14.grid( pady=2, padx=2, column=2, row=5)
 
     ########################  THREE  #########################
 
 
-    btn20 = tk.Button(window, width=3, height=2, bg=grid[2][0])
-    btn20.grid(column=3, row=1)
+    lbl20 = tk.Label(window, width=10, height=4, bg=grid[2][0])
+    lbl20.grid( pady=2, padx=2, column=3, row=1)
 
-    btn21 = tk.Button(window, width=3, height=2, bg=grid[2][1])
-    btn21.grid(column=3, row=2)
+    lbl21 = tk.Label(window, width=10, height=4, bg=grid[2][1])
+    lbl21.grid( pady=2, padx=2, column=3, row=2)
 
-    btn22 = tk.Button(window, width=3, height=2, bg=grid[2][2])
-    btn22.grid(column=3, row=3)
+    lbl22 = tk.Label(window, width=10, height=4, bg=grid[2][2])
+    lbl22.grid( pady=2, padx=2, column=3, row=3)
 
-    btn23 = tk.Button(window, width=3, height=2, bg=grid[2][3])
-    btn23.grid(column=3, row=4)
+    lbl23 = tk.Label(window, width=10, height=4, bg=grid[2][3])
+    lbl23.grid( pady=2, padx=2, column=3, row=4)
 
-    btn24 = tk.Button(window, width=3, height=2, bg=grid[2][4])
-    btn24.grid(column=3, row=5)
+    lbl24 = tk.Label(window, width=10, height=4, bg=grid[2][4])
+    lbl24.grid( pady=2, padx=2, column=3, row=5)
 
     ########################  FOUR  #########################
 
 
-    btn30 = tk.Button(window, width=3, height=2, bg=grid[3][0])
-    btn30.grid(column=4, row=1)
+    lbl30 = tk.Label(window, width=10, height=4, bg=grid[3][0])
+    lbl30.grid( pady=2, padx=2, column=4, row=1)
 
-    btn31 = tk.Button(window, width=3, height=2, bg=grid[3][1])
-    btn31.grid(column=4, row=2)
+    lbl31 = tk.Label(window, width=10, height=4, bg=grid[3][1])
+    lbl31.grid( pady=2, padx=2, column=4, row=2)
 
-    btn32 = tk.Button(window, width=3, height=2, bg=grid[3][2])
-    btn32.grid(column=4, row=3)
+    lbl32 = tk.Label(window, width=10, height=4, bg=grid[3][2])
+    lbl32.grid( pady=2, padx=2, column=4, row=3)
 
-    btn33 = tk.Button(window, width=3, height=2, bg=grid[3][3])
-    btn33.grid(column=4, row=4)
+    lbl33 = tk.Label(window, width=10, height=4, bg=grid[3][3])
+    lbl33.grid( pady=2, padx=2, column=4, row=4)
 
-    btn34 = tk.Button(window, width=3, height=2, bg=grid[3][4])
-    btn34.grid(column=4, row=5)
+    lbl34 = tk.Label(window, width=10, height=4, bg=grid[3][4])
+    lbl34.grid( pady=2, padx=2, column=4, row=5)
 
 
     ########################  FIVE  #########################
 
 
-    btn40 = tk.Button(window, width=3, height=2, bg=grid[4][0])
-    btn40.grid(column=5, row=1)
+    lbl40 = tk.Label(window, width=10, height=4, bg=grid[4][0])
+    lbl40.grid( pady=2, padx=2, column=5, row=1)
 
-    btn41 = tk.Button(window, width=3, height=2, bg=grid[4][1])
-    btn41.grid(column=5, row=2)
+    lbl41 = tk.Label(window, width=10, height=4, bg=grid[4][1])
+    lbl41.grid( pady=2, padx=2, column=5, row=2)
 
-    btn42 = tk.Button(window, width=3, height=2, bg=grid[4][2])
-    btn42.grid(column=5, row=3)
+    lbl42 = tk.Label(window, width=10, height=4, bg=grid[4][2])
+    lbl42.grid( pady=2, padx=2, column=5, row=3)
 
-    btn43 = tk.Button(window, width=3, height=2, bg=grid[4][3])
-    btn43.grid(column=5, row=4)
+    lbl43 = tk.Label(window, width=10, height=4, bg=grid[4][3])
+    lbl43.grid( pady=2, padx=2, column=5, row=4)
 
-    btn44 = tk.Button(window, width=3, height=2, bg=grid[4][4])
-    btn44.grid(column=5, row=5)
+    lbl44 = tk.Label(window, width=10, height=4, bg=grid[4][4])
+    lbl44.grid( pady=2, padx=2, column=5, row=5)
 
 
 
 
 window = tk.Tk()
 window.title("Codemaster Card Randomizer")
-window.geometry('450x450')
+window.geometry('500x500')
 drawGrid()
 
 btn = tk.Button(window, text="New Card!", command = clicked,)
