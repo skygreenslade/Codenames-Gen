@@ -11,8 +11,8 @@
 - videocall includes a view of the game board
 - two people (as codemasters) run the generator to get a card. if codemasters are not local to eachother, send the other one a picture or something.
 
-## Notes
+## Executables:
 
-- PyInstall (used to generate executable) has to be run on the OS for the executable to be run on. 
-- Currently includes Linux executable.
+- Linux: Release 1.1
+- Mac OS: tested on High Sierra 10.13.6 Release 1.1
 
