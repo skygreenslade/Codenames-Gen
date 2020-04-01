@@ -17,6 +17,6 @@ If you have Python, just run ui.py with Python. Otherwise, download a file from 
 ## Executables:
 | OS | File | Version | Notes |
 | ------ | ------ | ------ | ------ |
-| Linux | RandomCodeCard | 1.1 | Tested on Debian 9 |
+| Linux | RandomCodeCard | 1.0 | Tested on Debian 9 |
 | Mac OS | CodenamesCardGenerator_Mac.app | 1.1 | Tested on High Sierra 10.13.6|
 
