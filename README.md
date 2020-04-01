@@ -12,7 +12,7 @@
 - Two people (as codemasters) run the generator to get a card. if codemasters are not local to eachother, send the other one a picture or something.
 - ~~Destroy your opponents~~ Have fun!
 
-If you have Python, just run ui.py with Python. Otherwise, download a file from the list below.
+If you have Python, just run ui.py with Python. Otherwise, download a file from the list below (found in the "executables" folder).
 
 ## Executables:
 | OS | File | Version | Notes |
