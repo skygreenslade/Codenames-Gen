@@ -16,10 +16,11 @@ If you have Python, just run ui.py with Python. Otherwise, download a file from 
 
 ## Executables
 
-These files can be downloaded individually from the "executables" folder. Zipped versions are also available (which may be easier to download on a mac).
+These files can be downloaded individually from the "executables" folder.
 
 | OS | File | Version | Notes |
 | ------ | ------ | ------ | ------ |
 | Linux | RandomCodeCard | 1.0 | Tested on Debian 9 |
 | Mac OS | CodenamesCardGenerator_Mac.app | 1.1 | Tested on High Sierra 10.13.6|
+| Windows | Codenames-Gen-1.1-windows.zip | 1.1 | Download and unzip, then run "ui.exe" in the "ui" folder |
 
