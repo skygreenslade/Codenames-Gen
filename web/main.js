@@ -66,7 +66,7 @@ function clearGrid(){
 function genNew(){
 
     redFirst = Math.random() < 0.5;
-    newList = randomList(false);
+    newList = randomList(redFirst);
     clearGrid()
     
     // add cards to rows
