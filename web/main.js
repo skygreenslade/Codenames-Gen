@@ -61,6 +61,18 @@ function clearGrid(){
 } //clearGrid
 
 
+function updateHeading(redFirst){
+    toPrint = "";
+    if (redFirst){
+        toPrint += "Red ";
+    } else {
+        toPrint += "Blue ";
+    }
+    toPrint += "Goes First!";
+
+    document.getElementById('cardHeading').innerHTML = toPrint;
+
+}//updateHeading
 
 
 function genNew(){
@@ -76,6 +88,7 @@ function genNew(){
             addCard(currRow, newList[(i*5 + j)]);
         }
     }
+    updateHeading(redFirst);
 
 }
 
