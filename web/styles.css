@@ -32,6 +32,7 @@ body{
 
 div.grid {
     border: 1px solid rgba(41, 41, 41, 0.616);
+    /*border is just for showing the sizing. to be removed in production*/
     height: 50vh;
     width: 80vw;
     margin: auto;
