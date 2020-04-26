@@ -1,0 +1,76 @@
+
+
+body{
+    background-image: linear-gradient(160deg, #bfa788, burlywood);
+}
+
+
+#button2 {
+    margin: auto;
+    display: flex;
+    background-color: mediumseagreen;
+    opacity: 0.8;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor:pointer;
+    user-select: none;
+    transition:0.3s;
+}
+
+#button2:hover{
+    opacity: 1;
+}
+#button2:focus{
+    outline:none;
+    box-shadow:0 0 0 1.5pt seagreen;
+}
+
+
+div.grid {
+    border: 1px solid rgba(41, 41, 41, 0.616);
+    height: 50vh;
+    width: 80vw;
+    margin: auto;
+}
+
+
+/* div.row {
+    padding: 1%;
+
+} */
+
+
+div.card {
+    height: calc(15%);
+    width: calc(15%);
+    border: 1px solid  rgba(41, 41, 41);
+    display: inline-flex;
+    margin: 1%;
+    border-radius:0.8em;
+
+
+}
+div.blue{
+    background-color:#1d82e0;
+    box-shadow: 0px 0px 5px 1px #1d82e0, 1px 0px 10px 1px #888888;
+}
+
+div.red{
+    background-color: #e63c44;
+    box-shadow: 0px 0px 5px 1px #e63c44, 1px 0px 10px 1px #888888;
+}
+
+div.black{
+    background-color: #18181a;
+    box-shadow: 0px 0px 5px 1px #666666, 1px 0px 10px 1px #888888;
+}
+
+div.brown{
+    background-color: burlywood;
+    box-shadow: 0px 0px 5px 1px burlywood, 1px 0px 10px 1px #888888;
+}
+
