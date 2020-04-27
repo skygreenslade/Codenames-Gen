@@ -4,6 +4,14 @@ body{
     background-image: linear-gradient(160deg, #bfa788, burlywood);
 }
 
+div.heading {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+div.btn2Wrapper {
+    padding-top: 1em;
+}
 
 #button2 {
     margin: auto;
