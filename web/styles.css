@@ -61,16 +61,25 @@ div.btn2Wrapper {
 div.grid {
     border: 1px solid rgba(41, 41, 41, 0.616);
     /*border is just for showing the sizing. to be removed in production*/
-    height: 65vmin;
-    width: max(80vmin, 70vw);
+    height: calc(65vmin + 2em);
+    width: calc(max(80vmin, 70vw) + 2em);
     margin: auto;
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.61);
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.61);
+    border-radius: 1em;
 }
 
 
-/* div.row {
-    padding: 1%;
-
-} */
+div.row {
+    margin-left: 1em;
+}
+div.top {
+    margin-top: 1em;
+}
+div.bottom {
+    margin-bottom: 1em;
+}
 
 
 div.card {
