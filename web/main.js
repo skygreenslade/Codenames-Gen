@@ -65,8 +65,10 @@ function updateHeading(redFirst){
     toPrint = "";
     if (redFirst){
         toPrint += "Red ";
+        document.getElementById('headingUL').className = 'underline redGrad';
     } else {
         toPrint += "Blue ";
+        document.getElementById('headingUL').className = 'underline blueGrad';
     }
     toPrint += "Goes First!";
 

@@ -6,7 +6,26 @@ body{
 
 div.heading {
     text-align: center;
-    padding-bottom: 1em;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: large;
+    font-weight: 600;
+}
+
+div.underline {
+height:0.4em;
+    width: 60vw;
+    border-radius: 40%/100% ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+div.redGrad {
+    background-image: linear-gradient(to right, #be3239, #e63c44, #ffe8e9, #e63c44, #be3239);
+}
+
+div.blueGrad {
+    background-image: linear-gradient(to right, #196ebd, #1d82e0, #e7f3ff, #1d82e0, #196ebd);
 }
 
 div.btn2Wrapper {
@@ -32,6 +51,7 @@ div.btn2Wrapper {
 #button2:hover{
     opacity: 1;
 }
+
 #button2:focus{
     outline:none;
     box-shadow:0 0 0 1.5pt seagreen;
