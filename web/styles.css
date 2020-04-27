@@ -61,8 +61,8 @@ div.btn2Wrapper {
 div.grid {
     border: 1px solid rgba(41, 41, 41, 0.616);
     /*border is just for showing the sizing. to be removed in production*/
-    height: 50vh;
-    width: 80vw;
+    height: 65vmin;
+    width: max(80vmin, 70vw);
     margin: auto;
 }
 
@@ -74,11 +74,11 @@ div.grid {
 
 
 div.card {
-    height: calc(15%);
-    width: calc(15%);
+    height: calc(65vmin/5 - 2px - min(0.8vmin, 0.8vw)*2);
+    width: calc(max(80vmin, 70vw)/5 - 2px - min(0.8vmin, 0.8vw)*2);
     border: 1px solid  rgba(41, 41, 41);
     display: inline-flex;
-    margin: 1%;
+    margin: min(0.8vmin, 0.8vw);
     border-radius:0.8em;
 
 
