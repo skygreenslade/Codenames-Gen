@@ -59,8 +59,7 @@ div.btn2Wrapper {
 
 
 div.grid {
-    border: 1px solid rgba(41, 41, 41, 0.616);
-    /*border is just for showing the sizing. to be removed in production*/
+    border: 1px solid transparent;
     height: calc(65vmin + 2em);
     width: calc(max(80vmin, 70vw) + 2em);
     margin: auto;
