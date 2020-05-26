@@ -1,6 +1,8 @@
 
 
 const newBtn = document.getElementById('button2');
+s = [0, 0, 0]; //seed values for RNG
+rngInit();
 genNew();
 
 
@@ -38,7 +40,7 @@ function randomList(redFirst){
     // (Fisher-Yates) shuffle the list
     end = fullList.length;
     while(end>0){
-        i = Math.floor(Math.random()*end--);
+        i = Math.floor(rng()*end--);
         temp = fullList[end];
         fullList[end]=fullList[i];
         fullList[i] = temp;
@@ -94,6 +96,45 @@ function genNew(){
 
 }
 
+// run once on page load to initialize randomize function 
+// and whenever a seed is given
+function rngInit(seed){
+
+    // if no seed is given, generate random seed values
+    if (seed == null) {
+        s[0] = Math.random()*29999 +1;
+        s[1] = Math.random()*29999 +1;
+        s[2] = Math.random()*29999 +1;
+    } else {
+        //create seeds using given string "seed"
+        for (i=0; i<3; i++){
+            num = seed.charCodeAt(i%(seed.length))*10;
+            num = num + seed.charCodeAt((i+3)%(seed.length));
+            console.log(num);
+            s[i] = num;
+        }
+        if (s[0]&&s[1]&&s[2] == 0){
+            //no zero values please!
+            rngInit();
+            alert('Sorry, "' + seed +'" will not work as a seed!');
+        }
+    }
+}
+
+
+
+// (pseudo) random number generator
+function rng(){
+
+    //Wichmann-Hill RNG:
+    s[0] = (171*s[0])% 30269;
+    s[1] = (172*s[1])% 30307;
+    s[2] = (170*s[2])% 30323;
+    return (((s[0]/30269) + (s[1]/30307) + (s[2]/30323))%1);
+}
+
+
+
 //add given cardType (class string) to given row (ID)
 function addCard(row, cardType){
     var newCard = document.createElement('div');
@@ -104,4 +145,3 @@ function addCard(row, cardType){
 
 
 newBtn.addEventListener('click', genNew);
-
