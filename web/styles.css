@@ -33,8 +33,7 @@ div.btn2Wrapper {
 }
 
 #button2 {
-    margin: auto;
-    display: flex;
+    margin-left: calc(50% - 61px);
     background-color: mediumseagreen;
     opacity: 0.8;
     color: white;
@@ -55,6 +54,17 @@ div.btn2Wrapper {
 #button2:focus{
     outline:none;
     box-shadow:0 0 0 1.5pt seagreen;
+}
+
+#seedField{
+    max-width: calc(30% - 4em);
+    font-family: sans-serif;
+
+}
+
+#seedLabel{
+    padding-left: 1em;
+    font-family: sans-serif;
 }
 
 

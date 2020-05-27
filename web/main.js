@@ -2,6 +2,7 @@
 
 const newBtn = document.getElementById('button2');
 s = [0, 0, 0]; //seed values for RNG
+lastSeed = null;
 rngInit();
 genNew();
 
@@ -85,8 +86,9 @@ function genNew(redFirst){
 
     seed = document.getElementById("seedField").value;
     console.log("seed: " + seed);
-    //temporary placement
-    if ((seed != null)&&(seed != "")){
+    //temporary placement?
+    if ((seed != null)&&(seed != "")&&(seed != lastSeed)){
+        lastSeed = seed;
         rngInit(seed);
     }
 
@@ -106,7 +108,7 @@ function genNew(redFirst){
     }
     updateHeading(redFirst);
 
-}
+}//genNew
 
 
 // run once on page load to initialize randomize function 
@@ -133,7 +135,7 @@ function rngInit(seed){
             alert('Sorry, "' + seed +'" will not work as a seed!');
         }
     }
-}
+}//rngInit
 
 
 
@@ -145,7 +147,7 @@ function rng(){
     s[1] = (172*s[1])% 30307;
     s[2] = (170*s[2])% 30323;
     return (((s[0]/30269) + (s[1]/30307) + (s[2]/30323))%1);
-}
+}//rng
 
 
 
@@ -155,7 +157,7 @@ function addCard(row, cardType){
     newCard.className = cardType;
     document.getElementById(row).appendChild(newCard);
 
-}
+}//addCard
 
 
 newBtn.addEventListener('click', genNew);
