@@ -81,9 +81,19 @@ function updateHeading(redFirst){
 
 
 // main function which clears grid, generates new grid, and updates displays
-function genNew(){
+function genNew(redFirst){
 
-    redFirst = Math.random() < 0.5;
+    seed = document.getElementById("seedField").value;
+    console.log("seed: " + seed);
+    //temporary placement
+    if ((seed != null)&&(seed != "")){
+        rngInit(seed);
+    }
+
+    // randomize first team if not given
+    if (redFirst == null){
+        redFirst = Math.random() < 0.5;
+    }
     newList = randomList(redFirst);
     clearGrid()
     
@@ -110,11 +120,12 @@ function rngInit(seed){
         s[2] = Math.random()*29999 +1;
     } else {
         //create seeds using given string "seed"
-        for (i=0; i<3; i++){
+        s = [0, 0, 0]
+        for (i=0; i<(Math.max(3, seed.length)); i++){
             num = seed.charCodeAt(i%(seed.length))*10;
             num = num + seed.charCodeAt((i+3)%(seed.length));
             console.log(num);
-            s[i] = num;
+            s[i%3] += num;
         }
         if (s[0]&&s[1]&&s[2] == 0){
             //no zero values please!
