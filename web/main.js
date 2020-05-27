@@ -6,7 +6,7 @@ rngInit();
 genNew();
 
 
-// generateand return a random list of cards to insert
+// generate and return a random list of cards to insert
 // boolean redFirst dictates which colour gets an extra card
 function randomList(redFirst){
     fullList = [];
@@ -63,6 +63,7 @@ function clearGrid(){
 } //clearGrid
 
 
+// updates heading to sidplay to the user which team goes first
 function updateHeading(redFirst){
     toPrint = "";
     if (redFirst){
@@ -79,6 +80,7 @@ function updateHeading(redFirst){
 }//updateHeading
 
 
+// main function which clears grid, generates new grid, and updates displays
 function genNew(){
 
     redFirst = Math.random() < 0.5;
@@ -95,6 +97,7 @@ function genNew(){
     updateHeading(redFirst);
 
 }
+
 
 // run once on page load to initialize randomize function 
 // and whenever a seed is given
